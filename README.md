@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-pMc55XA0Vc](https://www.frontendmentor.io/solutions/rest-countries-api-with-color-theme-switcher-pMc55XA0Vc)
 - Live Site URL: [https://liquidwater0.github.io/REST-Countries-API-with-color-theme-switcher/](https://liquidwater0.github.io/REST-Countries-API-with-color-theme-switcher/)
 
 ## My process
