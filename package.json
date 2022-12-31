@@ -1,7 +1,6 @@
 {
   "name": "rest-countries-api",
   "private": true,
-  "homepage": "/REST-Countries-API-with-color-theme-switcher/",
   "version": "1.0",
   "type": "module",
   "scripts": {
