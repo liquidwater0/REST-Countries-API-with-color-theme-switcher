@@ -19,7 +19,7 @@ export default function CountryCard({ country }) {
             onClick={() => navigate(`/country/${cca3}`)}
         >
             <div className="image-container">
-                <img src={flags.png} />
+                <img src={flags.png} alt="country flag"/>
             </div>
             <div className="card-body">
                 <div>

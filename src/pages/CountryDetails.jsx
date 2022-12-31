@@ -38,7 +38,7 @@ export default function CountryDetails() {
             <div className="country-details-grid">
                 <div>
                     <div className="image-container">
-                        <img src={flags.png} />
+                        <img src={flags.png} alt="country flag"/>
                     </div>
                 </div>
 
