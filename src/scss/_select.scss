@@ -1,0 +1,58 @@
+.select {
+    position: relative;
+    cursor: pointer;
+    width: 12rem;
+    z-index: 2;
+
+    &[data-state="open"] {
+        .options {
+            transform: scaleY(1);
+        }
+        .arrow {
+            rotate: 0deg;
+        }
+    }
+
+    &[data-state="closed"] {
+        .options {
+            transform: scaleY(0);
+        }
+        .arrow {
+            rotate: 180deg;
+        }
+    }
+
+    .selected-option, .options {
+        background-color: var(--theme-100);
+        border-radius: var(--app-border-radius);
+    }
+
+    .selected-option {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 2em;
+
+        .arrow {
+            transition: rotate 300ms;
+        }
+    }
+
+    .options {
+        position: absolute;
+        list-style: none;
+        margin-top: 1rem;
+        width: 100%;
+        transform-origin: top;
+        transition: transform 300ms;
+        
+        .option {
+            padding: 0.75em 2em;
+            transition: background-color 200ms;
+
+            &:hover { 
+                background-color: var(--theme-200); 
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@use "./themes.scss" as *;
+@use "./buttons.scss" as *;
+@use "./textField.scss" as *;
+@use "./select.scss" as *;
+@use "./card.scss" as *;
+@use "./home.scss" as *;
+@use "./countryDetails.scss" as *;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --app-border-radius: 0.35em;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: grid;
+    grid-template-rows: min-content 1fr;
+}
+
+body {
+    background-color: var(--theme-200);
+    color: var(--theme-text);
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.shadow {
+    box-shadow: 0px 0px var(--blur, 10px) 0px rgba(0, 0, 0, 0.25);
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.header {
+    background-color: var(--theme-100);
+    padding: 1rem;
+    font-weight: 800;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 100% !important;
+        padding-inline: 1rem;
+    }
+}

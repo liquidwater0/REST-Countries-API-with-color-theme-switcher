@@ -1,0 +1,28 @@
+.home-page {
+    font-size: 14px;
+    
+    .filter-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 4rem 0;
+    }
+    
+    .country-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .filter-section {
+        align-items: flex-start !important;
+        flex-direction: column;
+        gap: 1.5rem;
+
+        .text-field {
+            width: 100%;
+        }
+    }
+}

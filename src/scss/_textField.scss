@@ -1,0 +1,16 @@
+.text-field {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background-color: var(--theme-100);
+    padding: 0 2em;
+    border-radius: var(--app-border-radius);
+
+    input[type="text"] {
+        background-color: transparent;
+        color: var(--theme-text);
+        border: none;
+        outline: none;
+        padding: 1em 0;
+    }
+}

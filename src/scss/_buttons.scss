@@ -1,0 +1,28 @@
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em 0.75em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button {
+    gap: 0.5em;
+    background-color: var(--theme-100);
+    color: var(--theme-text);
+    padding: 0.75em 3.5em;
+    border-radius: var(--app-border-radius);
+    transition: background-color 200ms;
+
+    &:hover {
+        background-color: var(--theme-200);
+    }
+}
+
+.theme-toggle-button {
+    background-color: transparent;
+    font-weight: 600;
+    padding: 0.5em 0.75em;
+}

@@ -1,0 +1,39 @@
+.card {
+    display: grid;
+    background-color: var(--theme-100);
+    border-radius: var(--app-border-radius);
+    overflow: hidden;
+    cursor: pointer;
+    transition: 
+        transform 200ms,
+        box-shadow 200ms;
+
+    .image-container {
+        img {
+            width: 100%;
+        }
+    }
+
+    .card-title {
+        font-size: 1.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        line-height: initial;
+    }
+
+    .card-body {
+        padding: 1.25rem 2rem;
+        line-height: 1.75;
+        letter-spacing: 0.25px;
+    }
+
+    &:hover {
+        --blur: 15px;
+        transform: translateY(-5px);
+    }
+
+    &:active {
+        --blur: 20px;
+        transform: translateY(-10px);
+    }
+}
