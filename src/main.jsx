@@ -6,7 +6,7 @@ import CountriesProvider from './context/CountriesContext';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<BrowserRouter basename='/REST-Countries-API-with-color-theme-switcher/'>
 			<CountriesProvider>
 				<App />
 			</CountriesProvider>
