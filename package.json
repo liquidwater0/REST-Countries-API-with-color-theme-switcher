@@ -1,7 +1,7 @@
 {
   "name": "rest-countries-api",
   "private": true,
-  "homepage": "https://liquidwater0.github.io/REST-Countries-API-with-color-theme-switcher/",
+  "homepage": "/REST-Countries-API-with-color-theme-switcher/",
   "version": "1.0",
   "type": "module",
   "scripts": {
