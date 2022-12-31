@@ -1,13 +1,14 @@
 import React from 'react';
 
-export default function SelectOption({ label, ...props }) {
+export default function SelectOption({ optionLabel, optionValue, ...props }) {
     return (
         <li 
             className='option' 
-            label={label} 
+            option-label={optionLabel} 
+            option-value={optionValue}
             { ...props }
         >
-            { label }
+            { optionLabel }
         </li>
     );
 }

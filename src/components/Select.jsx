@@ -12,14 +12,14 @@ export default function Select({ children, onOptionSelect }) {
             setIsOpen(false);
         });
         selectOptions.current.addEventListener("click", handleClick);
-        setSelected(selectOptions.current.children[0].getAttribute("label"));
+        setSelected(selectOptions.current.children[0].getAttribute("option-label"));
     }, []);
 
     function handleClick({ target }) {
         if (!target.classList.contains("option")) return;
         
-        const label = target.getAttribute("label");
-        const value = target.getAttribute("value");
+        const label = target.getAttribute("option-label");
+        const value = target.getAttribute("option-value");
 
         setSelected(label);
         onOptionSelect && onOptionSelect(value);

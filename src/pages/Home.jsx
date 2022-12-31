@@ -25,14 +25,14 @@ export default function Home() {
                     onChange={({ target }) => setSearchQuery(target.value)}
                 />
                 <Select onOptionSelect={value => setRegionFilter(value)}>
-                    <SelectOption label="Filter by Region" value=""/>
+                    <SelectOption optionLabel="Filter by Region" optionValue=""/>
                     {
                         regions.map((region, index) => {
                             return (
                                 <SelectOption
                                     key={`${region}-${index}`}
-                                    label={region}
-                                    value={region.toLowerCase()}
+                                    optionLabel={region}
+                                    optionValue={region.toLowerCase()}
                                 />
                             );
                         })
