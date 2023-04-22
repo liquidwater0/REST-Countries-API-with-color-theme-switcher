@@ -12,12 +12,23 @@ export default function Home() {
     const [regionFilter, setRegionFilter] = useState("");
 
     useEffect(() => {
+        let timeout = setTimeout(() => {
+            getFilteredCountries(searchQuery, regionFilter);
+        }, 1000);
+
+        return () => clearTimeout(timeout);
+    }, [searchQuery]);
+
+    useEffect(() => {
         getFilteredCountries(searchQuery, regionFilter);
-    }, [searchQuery, regionFilter]);
+    }, [regionFilter]);
 
     return (
         <div className="home-page container">
-            <div className="filter-section">
+            <form 
+                onSubmit={(event) => event.preventDefault()} 
+                className="filter-section"
+            >
                 <TextField 
                     placeholder="Search for a country..."
                     icon={ <Search/> }
@@ -38,7 +49,7 @@ export default function Home() {
                         })
                     }
                 </Select>
-            </div>
+            </form>
             
             <div className="country-grid">
                 {
